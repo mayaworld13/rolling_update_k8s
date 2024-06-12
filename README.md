@@ -29,7 +29,15 @@ docker build -t webserver:v2 .
   <img src="https://github.com/mayaworld13/rolling_update_k8s/assets/127987256/3d0455bb-9e0c-4b25-b1ea-d1a750e0d1ed" alt="page" width="480" height="50" />
 </p>
 
+### 2. Push Docker Images to a Container Registry
 
+Push the Docker images to a container registry like Docker Hub:
 
+```bash
+docker tag webserver:v1 yourusername/webserver:v1
+docker push yourusername/webserver:v1
+docker tag webserver:v2 yourusername/webserver:v2
+docker push yourusername/webserver:v2
+```
 
 
